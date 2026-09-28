@@ -1,0 +1,44 @@
+# Munch
+
+> An Optimus-class predictive-echo fleet: riff, sun, munch chef, scribe, and goals robots.
+
+## Purpose
+Explain munch as a small fleet of named robots that share the predict-echo loop. Source: fitzyracing1/munch.
+
+## How it works (plain English)
+1. Each robot predicts an echo.
+2. It acts on that guess.
+3. It hears the real return and corrects.
+4. Roles stay named: riff, sun, chef, scribe, goals.
+
+## Key ideas
+- Fleet (more than one named robot)
+- Predictive echo (guess, act, hear, correct)
+- Named roles (each robot has a job name)
+
+## The actual code
+```
+# source: fitzyracing1/munch
+roles = [riff, sun, munch_chef, scribe, goals]
+for robot in roles:
+    predict_echo(); act(); hear(); correct()
+```
+
+## Line-by-line translation
+1. roles = [...] → “these are the named robots”
+2. predict_echo() → “guess the bounce”
+3. act() → “move on the guess”
+4. hear(); correct() → “listen and fix the guess”
+
+## Decisions the program makes
+- If a role is named → run that robot’s loop
+- If the echo is wrong → correct, do not invent a world map
+
+## What a person would notice
+Several named robots sharing one loop style.
+
+## Current status
+Barrage clone.
+
+## Next possible steps
+Open fitzyracing1/munch and pick one role to run.
